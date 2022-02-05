@@ -4,7 +4,6 @@ else
   let min=$1
 fi
 let seconds=$min*60
-#let seconds=3
 echo "Waiting ${min} minutes"
 sleep $seconds
 
