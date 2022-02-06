@@ -1,13 +1,21 @@
+#!/bin/bash
+
 if [ -z "$1" ]; then
   let min=25 
 else
   let min=$1
 fi
-let seconds=$min*60
 echo "Waiting ${min} minutes"
-sleep $seconds
+
+for i in $(seq 1 $min)
+do
+  sleep 60  
+  let rem=min-i
+  echo -ne "${rem} minutes remaining\\r"
+done
+echo ""
 
 msg="Timer is done"
-say -v Tessa $msg
 echo $msg
+say -v Tessa $msg
 
