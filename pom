@@ -8,6 +8,6 @@ echo "Waiting ${min} minutes"
 sleep $seconds
 
 msg="Timer is done"
-say $msg
+say -v Tessa $msg
 echo $msg
 
