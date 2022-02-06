@@ -15,7 +15,7 @@ do
 done
 echo ""
 
-msg="Timer is done"
+msg="Pomodoro completare"
 echo $msg
-say -v Tessa $msg
+say -v Luca $msg
 
